@@ -18,7 +18,6 @@ const onClickLogin = async () => {
   }
 
   const result = await validateUser(email);
-
   if (result.error) {
     alert("Falha ao validar o e-mail.");
     return;
@@ -26,5 +25,5 @@ const onClickLogin = async () => {
   localStorage.setItem("@WalletApp:userEmail", result.email);
   localStorage.setItem("@WalletApp:userName", result.name);
   localStorage.setItem("@WalletApp:userId", result.id);
-  window.open("./src/pages/home/index.html");
+  window.location.href = "./src/pages/home/index.html";
 };
