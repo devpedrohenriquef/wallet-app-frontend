@@ -6,7 +6,7 @@ const onCallRegister = async (email, name) => {
     };
 
     const response = await fetch(
-      "https://mp-wallet-app-api.herokuapp.com/users",
+      "https://wallet-app-api-mp-16500a81b5f4.herokuapp.com/users",
       {
         method: "POST",
         mode: "cors",

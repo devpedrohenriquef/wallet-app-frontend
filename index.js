@@ -1,7 +1,7 @@
 const validateUser = async (email) => {
   try {
     const result = await fetch(
-      `https://mp-wallet-app-api.herokuapp.com/users?email=${email}`
+      `https://wallet-app-api-mp-16500a81b5f4.herokuapp.com/users?email=${email}`
     );
     const user = await result.json();
     return user;
